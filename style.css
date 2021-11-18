@@ -1,162 +1,167 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'arial', sans-serif;
-}
-
-section{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-section header{
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-
-}
-section header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section header ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-section header ul li a{
-    color: #111;
-    text-decoration: none;
-    font-size: 13px;
-}
-section header ul li a:hover{
-    text-decoration: underline;
-}
-section header ul li button{
-    background: #4584ef;
-    border: none;
-    outline: none;
-    padding: 8px 14px;
-    color: #fff;
-}
-
-section .main{
-    width:  580px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-section .main .searchBox{
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-}
-section .main .searchBox .search{
-    width: 600px;
-    padding: 13px;
-    padding-left: 45px;
-    padding-right: 60px;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-size: 16px; 
-}
-
-section .main .searchBox .icon{
-    position: absolute;
-    top: 0;
-    width: 100px;
-    display: flex;
-    padding: 12px 20px;
-    justify-content: space-between;
-    align-items: center;
-    pointer-events: none;
    
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: arial, sans-serif;
 }
-#logo2{
-    
-    margin-left: 530px;
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
-
-section .main .buttons{
-    margin-top: 20px;
-    
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 30px;
+	margin-top: 14px;
 }
-section .main .buttons button{
-    margin: 0 5px;
-    padding: 12px 20px;
-    color: #555;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    outline: none;
+nav a {
+	font-size: 13px;
+	display: inline-block;
+	line-height: 24px;
+	font-weight: 400;
+	color: rgb(0,0,0, 0.87);
+	cursor: pointer;
+	padding: 5px 6.7px
 }
-section .main .buttons button:hover{
-    border: 1px solid #ccc;
+nav a:hover {
+	text-decoration: underline;
+	opacity: .85;
 }
-#links{
-   text-align: center;
-   margin-top: 10px;
-   font-size: small;
+nav img {
+	width: 34px;
+	padding: 5px;
+	margin: auto 7px;
+	cursor: pointer;
 }
-#links a{
-    margin-left: 5px;
-    text-decoration: none;
+nav img:hover {
+	opacity: .8;
 }
-#links a:hover{
-    text-decoration: underline;
+nav button {
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	background: #4285f4;
+	color: #fff;
+	padding: 7px 12px;
+	border-radius: 3px;
+	margin-left: 7px;
+	cursor: pointer;
 }
-footer  {
-    
-   position: absolute;
-    background: #f2f2f2;
-    border-top: solid 2px #e4e4e4;
-  /*   position: fixed; */
-    bottom: 0;
-    padding-bottom: 10px;
-    width: 100%;
-    
-  }
-  
-  footer ul li {
-    display: inline;
-    color: #666666;
-    font-size: 14px;
-    padding: 13px;
-  }
-  footer ul li a{
-       text-decoration: none;
-  }
-  
-  footer ul {
-    text-decoration: none;
-    float: left;
-    padding: 1px;
-  }
-  
-  footer ul a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-right {
-    float: right;
-  }
-
-  
-
-
-
-
+.section-1 {
+	flex: 1;
+}
+.section-1 .logo {
+	display: block;
+	margin: 0px auto;
+	margin-top: 107px;
+}
+.mid-box {
+	width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: -8px;
+	text-align: center;
+}
+.mid-box .s-input {
+	display: block;
+	border: 1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 45px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+	margin-top: 30px;
+}
+.mid-box  .s-input:hover {
+	border: 1px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05), 
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+.mid-box .search-icon {
+	width: 20px;
+	opacity: .4;
+	position: absolute;
+	top: 13px;
+	left: 14px;
+}
+.mid-box .mic-icon {
+	width: 14px;
+	position: absolute;
+	top: 13px;
+	right: 24px;
+}
+.button {
+	border: 1px solid transparent;
+	padding: 9px 15px;
+	color: #666;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+}
+.button:hover {
+	border: 1px solid #aaa;
+}
+.mic-icon:hover{
+	background-color:#ddd;
+}
+.lanuage {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 13px;
+	color: #111;
+}
+.lanuage a {
+	margin-left: 5px;
+	color: #1a0dab;
+}
+.lanuageg a:hover {
+	text-decoration: underline;
+}
+footer {
+	background: #f2f2f2;
+}
+footer h4 {
+	color: rgba(0,0,0, 0.54);
+	font-size: 15px;
+	line-height: 39.5px;
+	font-weight: 400;
+	padding-left: 29px;
+	border: 1px solid #eee;
+}
+footer a {
+	color: #5f6368;
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 14px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+.links {
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+.first-link {
+	padding-left: 18px;
+	flex: 1;
+}
+.second-link {
+	padding-right: 18.7px;
+}
